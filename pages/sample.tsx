@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import {SampleCard} from "../components"
 // 型の定義
 export type ListPageProps = {
 	sample:string 
@@ -7,18 +7,15 @@ export type ListPageProps = {
 
 // style の設定
 
-
-
 // Rendering 機能
 export default function ListPage() {
 	// state を管理する機能をここに実装する
-	const [isShow, setIsShow] = useState(false);
-	
+
 	// ここでHTML を返す
 	return (
 		<>
 			<div>
-					これはテストです。
+					サンプルページです。
 			</div>
 		</>
 	)
