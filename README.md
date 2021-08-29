@@ -1,5 +1,8 @@
 
-このリポジトリは、社内の勉強会向けに立ち上げた
+このリポジトリは、社内の勉強会向けに作成しました。
+この勉強会で使用するスライドは次の URLで公開しています。
+
+- [Next.js 勉強会スライド](https://docs.google.com/presentation/d/1hg1CceXfQ9etW0eu8FF8BzbuLHIdDwIWxsMQ0CDd_KE/edit?usp=sharing)
 
 ## ディレクトリについて
 
