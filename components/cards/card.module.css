@@ -33,13 +33,13 @@
 }
 
 .card button.show:hover {
-	background-color: #90CDF4;
+	background-color: #BEE3F8;
 	border-color:  #3182CE;
-	color: #4A5568;
+	color: #3182CE;
 }
 
 .card button.imshow:hover {
 	background-color: #FED7D7;
 	border-color: #E53E3E;
-	color: #4A5568
+	color: #E53E3E;
 }

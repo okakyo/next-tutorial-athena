@@ -2,12 +2,18 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
-  name: string
+  id: string,
+  name: string,
+  email: string
 }
 
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.status(200).json({ name: 'John Doe' })
+  res.status(200).json({
+    id:"id-test",
+    name: 'John Doe',
+    email: "test@test.com"
+  })
 }
