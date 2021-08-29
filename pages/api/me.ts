@@ -12,7 +12,7 @@ export default function handler(
   res: NextApiResponse<Data>
 ) {
   res.status(200).json({
-    id:"id-test",
+    id:"1",
     name: 'John Doe',
     email: "test@test.com"
   })
