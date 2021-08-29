@@ -61,7 +61,7 @@ yarn dev
 
 ```bash
 # develop 環境の立ち上げる
-npm run install 
+npm run dev 
 # or 
 yarn dev
 
