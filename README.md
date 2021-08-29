@@ -29,16 +29,44 @@
 ```
 
 ## 初期設定について
+
+今回は npm または yarn を利用して環境を構築します。
+どちらを利用しても構いません。
+
+Homebrew を利用してこれらのツールをインストールします。
+
+```bash
+brew install nodejs 
+brew install yarn 
+```
+
 このリポジトリをインストールしたのち、
 
+```bash
+npm install 
+# or 
+yarn install
+```
+
+を実行します。必要なライブラリのインストール後、
+
+```bash 
+npm run dev
+# or 
+yarn dev
+```
+を実行すると、開発環境が立ち上がります。
 
 ## コマンドについて
 
 ```bash
 # develop 環境の立ち上げる
+npm run install 
+# or 
 yarn dev
 
 # ビルドする
+npm run build
 yarn build
 
 # 本番環境を立ち上げる（ビルド後に実行）
