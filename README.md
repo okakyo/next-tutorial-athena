@@ -67,12 +67,17 @@ yarn dev
 
 # ビルドする
 npm run build
+#or 
 yarn build
 
 # 本番環境を立ち上げる（ビルド後に実行）
+npm run start
+#or 
 yarn start 
 
 # Linter を動作する
+npm run lint
+#or 
 yarn lint
 ```
 
