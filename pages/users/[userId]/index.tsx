@@ -8,14 +8,18 @@ export default function UserDetailPage() {
 	
 	const getUserState = useUserContext() // Global State を取得
 	const userData = getUserState.user
-	if (userData.id !== userId) {
+	if (!userData) {
+		router.push("/");
+	}
+	else if ( userData?.id !== userId) {
 		return (
 			<>
 				403 Forbidden Access
 			</>
 		)
 	}
-	return (
+	else {
+		return (
 		<>
 			<div className={styles.card} style={{width:"100%",minWidth:"500px"}}>
 				<h2>
@@ -29,4 +33,6 @@ export default function UserDetailPage() {
 			</div>
 		</>
 	)
+	}
+	
 }

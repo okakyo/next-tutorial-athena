@@ -1,41 +1,41 @@
 import React, { createContext,ReactNode, useContext, useEffect, useState } from "react";
 
-type UserState = {
+
+// State の型を定義
+export type UserState = {
 		id: string,
 		name: string,
 		email: string,
 		state: number
 }
 
+// useContext 自体の型
 type UserContextType = {
-	user: UserState
+	user: UserState | null
 	setUser:(user: UserState)=>void
 }
 
-const initUserState:UserState = {
-	id: "",
-	name: "",
-	email: "",
-	state: 1
-}
-
 const UserContext = createContext<UserContextType>({
-	user: initUserState,
+	user: null,
 	setUser:()=>{}
 })
 
+// context の値を取得する関数
 export const useUserContext = () => {
 	return useContext(UserContext)
 }
 
-export const UserProvider = ({ children }: { children: ReactNode }) => {
-	const [user, setUser] = useState<UserState>(initUserState);
+// useContext のコンポーネントを取得するための関数
+export const UserProvider = (
+	{ children }:{ children: ReactNode }) => {
+	const [user, setUser] = useState<UserState|null>(null);
 	// useEffect をこの部分で実装する
 
 	useEffect(() => {
 		fetch("/api/me").then(res => {
 			return res.json()
 		}).then(res => {
+			console.log(res)
 			setUser({
 				...res
 			})
